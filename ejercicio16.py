@@ -13,15 +13,15 @@ La función debe retornar la traducción de cada palabra al Ubbi Dubbi.
 
 def ubbi_dubbi():
     
-    word = input("Enter a word to translate to Ubi Dubbi: ")
+    word = input("In gresa una palabra para convertir a Ubi Dubbi: ")
     
-    letters = []
+    letras = []
     
     for i in word:
         if i in 'aeiou':
-            letters.append('ub')
-        letters.append(i)
+            letras.append('ub')
+        letras.append(i)
     
-    return ''.join(letters)
+    return ''.join(letras)
 
 print(ubbi_dubbi())

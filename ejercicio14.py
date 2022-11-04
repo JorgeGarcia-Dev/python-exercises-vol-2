@@ -14,19 +14,19 @@ La función debe retornar la traducción de cada palabra al Pig Latin.
 ay = 'ay'
 way = 'way'
 
-user_word = input("Enter a word to translate to Pig Latin: ")
+palabra_usuario = input("Enter a word to translate to Pig Latin: ")
 
-first_letter = user_word[0]
+primera_letra = palabra_usuario[0]
 
 def pig_latin():
     
-    if first_letter in 'aeoiu':
-        pig_latin = user_word + way
-        print("The word in Pig Latin is: ", pig_latin)
+    if primera_letra in 'aeoiu':
+        pig_latin = palabra_usuario + way
+        print("La palabra en Pig Latin es: ", pig_latin)
     else:
-        length_word = len(user_word)
-        remove_first_letter = user_word[1:length_word]
-        pig_latin = remove_first_letter + first_letter + ay
-        print("The word in Pig Latin is: ", pig_latin)
+        contador_palabra = len(palabra_usuario)
+        remover_primera_letra = palabra_usuario[1:contador_palabra]
+        pig_latin = remover_primera_letra + primera_letra + ay
+        print("La palabra en Pig Latin es: ", pig_latin)
 
 pig_latin()
